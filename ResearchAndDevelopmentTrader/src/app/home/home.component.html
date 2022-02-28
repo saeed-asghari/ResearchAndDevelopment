@@ -1,0 +1,15 @@
+<div>change language http://localhost:4200/?lng=fa</div><br/>
+
+<div class="content" role="main" [dir]="strDir">
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+    <span>{{ "welcome" | i18next }}</span>
+  </div>
+
+  <br />
+  <p>
+    {{
+      "desc" | i18next: { url: "https://github.com/Romanchuk/angular-i18next" }
+    }}
+  </p>
+</div>

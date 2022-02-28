@@ -1,0 +1,47 @@
+<p><a>www.jqwidgets.com</a></p>
+<jqxButton #showWindowButton (onClick)="showWindowButtonClick()" [width]="100">
+  Show
+</jqxButton>
+<jqxTabs #jqxTabs
+         [width]="getWidth()" [height]="400" [position]="'top'" [rtl]="true">
+  <ul style="margin-left: 10px;">
+    <li>تب اول</li>
+    <li>تب دوم</li>
+ 
+  </ul>
+  <div style="text-align: right; direction: rtl;">
+   تب1 
+  </div>
+  <div style="text-align: right; direction: rtl;">
+    تب2 
+   </div>
+</jqxTabs>
+<div id="mainDemoContainer" #mainDemoContainer>
+  
+
+  <jqxWindow
+    #window
+    [width]="1024"
+    [height]="800"
+    [rtl]="true"
+    [resizable]="true"
+    [position]="{ x: 90, y: 220 }"
+  >
+    <div>About 30 St Mary Axe</div>
+    <jqxDocking [orientation]="'horizontal'" [width]="width" [mode]="'docked'">
+      <div>
+        <div id="window1" style="height: 220px">
+          <div>Watchlist</div>
+          <div style="overflow: hidden">
+            My Watchlist
+          </div>
+        </div>
+        <div id="window2" style="height: 220px">
+          <div>News</div>
+          <div style="overflow: hidden">Content of the "News" section</div>
+        </div>
+      </div>
+    </jqxDocking>
+  </jqxWindow>
+
+</div>

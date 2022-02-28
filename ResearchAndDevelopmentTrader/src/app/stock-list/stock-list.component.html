@@ -1,0 +1,31 @@
+<br />
+<div>
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Last</td>
+        <td>Time</td>
+        <td>Change</td>
+        <td>Bid Size</td>
+        <td>Bid</td>
+        <td>Ask</td>
+        <td>Ask Size</td>
+        <td>Min</td>
+        <td>Max</td>
+        <td>Ref.</td>
+        <td>Open</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of stocks;" >
+        <td
+          *ngFor="let field of row; let childIndex = index"
+          [class.leftAlign]="fieldNames[childIndex] === 'stock_name'"
+        >
+         <span  [ngStyle]="{'color':fieldNames[childIndex] == 'pct_change' ? 'red' : 'none' }">{{ field }}</span> 
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

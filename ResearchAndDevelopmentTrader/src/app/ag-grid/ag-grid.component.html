@@ -1,0 +1,19 @@
+
+<div>
+
+    <ag-grid-angular
+        style=" height: 500px;"
+        class="ag-theme-alpine"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        rowSelection="multiple"
+        [enableRtl]="lang"
+        [autoGroupColumnDef]="autoGroupColumnDef"
+        [groupDefaultExpanded]="groupDefaultExpanded"
+        [groupSelectsChildren]="true"
+        [overlayLoadingTemplate]="loadingTemplate"
+  [overlayNoRowsTemplate]="noRowsTemplate"
+    >
+    </ag-grid-angular>
+        <!-- [rowData]="rowData | async" -->
+</div>

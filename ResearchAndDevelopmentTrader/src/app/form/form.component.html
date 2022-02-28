@@ -1,0 +1,31 @@
+<!-- add class="mat-app-background"> to body -->
+<div class="example-container">
+  <form #myform="ngForm" (ngSubmit)="submit()">
+    <mat-form-field appearance="fill" floatLabel="always">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        type="email"
+        class="example-right-align"
+        placeholder="Email"
+        name="email"
+        #email
+        required
+      />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'"   name="password" #password required/>
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+    <button mat-raised-button mat-button type="submit" color="accent" [disabled]="!myform.valid">Submit</button>
+  </form>
+</div>

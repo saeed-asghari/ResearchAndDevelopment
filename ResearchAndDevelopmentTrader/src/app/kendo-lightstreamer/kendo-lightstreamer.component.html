@@ -1,0 +1,66 @@
+  
+
+<kendo-grid #grid [data]="gridData" (dataStateChange)="onStateChange()" [trackBy]="trackBy" >
+  <kendo-grid-column field="stock_name" title="stock_name">
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <div>
+        <span>
+          {{ dataItem | json }}
+          {{ dataItem[0] }}
+        </span>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+  <kendo-grid-column field="last_price" title="last_price" [width]="150">
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <div>
+        <span>
+          {{ dataItem[1] }}
+        </span>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+  <kendo-grid-column field="time" title="time">
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <div>
+        <span>
+          {{ dataItem[2] }}
+        </span>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+</kendo-grid>
+
+
+  
+
+<!-- <kendo-grid #grid [data]="gridData" (dataStateChange)="onStateChange()" [trackBy]="trackBy" >
+  <kendo-grid-column field="stock_name" title="stock_name">
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <div>
+        <span>
+          {{ dataItem | json }}
+          {{ dataItem.stock_name }}
+        </span>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+  <kendo-grid-column field="last_price" title="last_price" [width]="150">
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <div>
+        <span>
+          {{ dataItem.last_price }}
+        </span>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+  <kendo-grid-column field="time" title="time">
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <div>
+        <span>
+          {{ dataItem.time }}
+        </span>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+</kendo-grid> -->

@@ -1,0 +1,31 @@
+<!-- <div class="topnav">
+  <a routerLinkActive="active current" routerLink="/">Home</a>
+  <a routerLinkActive="current" routerLink="/windows">widget</a>
+  <a routerLinkActive="current" routerLink="/stocklist">stocklist</a>
+  <a routerLinkActive="current" routerLink="/stocklistchanges"
+    >stocklistchanges</a
+  >
+</div> -->
+
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <a class="gap" routerLinkActive="active current" routerLink="/">Home</a>
+    <a class="gap" routerLinkActive="current" routerLink="/windows">widget</a>
+    <a class="gap" routerLinkActive="current" routerLink="/stocklist">stocklist</a>
+    <a  class="gap" routerLinkActive="current" routerLink="/stocklistchanges" >stocklistchanges</a>
+    <a  class="gap" routerLinkActive="current" routerLink="/ag-grid" >ag-grid</a>
+    <a  class="gap" routerLinkActive="current" routerLink="/ag-grid-to-lightstreamer" >ag-grid-ightstreamer</a>
+    <a  class="gap" routerLinkActive="current" routerLink="/highChart" >highchart</a>
+    <a  class="gap" routerLinkActive="current" routerLink="/kendo" >kendo</a>
+    <a  class="gap" routerLinkActive="current" routerLink="/kendo-lightstreamer" >kendo-lightstreamer</a>
+    <button mat-button [matMenuTriggerFor]="menu">Theme</button>
+    <mat-menu #menu="matMenu">
+     <button mat-menu-item (click)="changeTheme('')">Default</button>
+     <button mat-menu-item (click)="changeTheme('theme')">New Theme</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+

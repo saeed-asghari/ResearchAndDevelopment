@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/jqwidgets-ng/jqwidgets/styles/jqx.base.css";
+@import "../node_modules/jqwidgets-ng/jqwidgets/styles/jqx.metro.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+@import "../node_modules/@progress/kendo-theme-default/dist/all.css";
+/* @import "../node_modules/bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css"; */
+/* @import "../src/mytheme.scss"; */
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
